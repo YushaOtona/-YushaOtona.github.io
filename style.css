@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+
+a {color: dodgerblue; text-decoration: none;}
+p, li {line-height: 25px;}
+/*客製化內容（自行調整 bsXlider CSS 設定）*/
+.bx-wrapper {/*預設的外框陰影*/
+box-shadow: 0 0 0;/*消去陰影*/
+border:0;/*消去邊框*/ }
+@keyframes fadein{
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body, h1, h2, h3, p ,ul {
+    margin: 0;/*清除預設的 margin*/
+    
+}
+
+* {box-sizing: border-box;}/*無敵星星的部分*/
+body {
+    color: #c4c4c4;
+    font-family:  "Noto Sans TC",sans-serif;
+    background-color: #000;
+}
+
+
+
+.wrap {
+    width: 100%;
+    height: 1080px;
+    margin-inline: auto;/*區塊左右置中*/
+}
+
+
+
+header {
+    width: 100%;
+    display: flex;/*橫排*/
+    justify-content: space-between;/*分開LOGO跟MENU*/
+    align-items: center;/*讓Logo 跟 Menu 上下居中*/
+    padding:10px 25px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    position:fixed;
+	top:0;
+    Z-index:99999;
+}
+
+
+a.logo {
+    width: 500px;
+}
+
+
+
+
+.menu{
+    background-color: #000000;
+    transform-origin: top; 
+}
+
+
+.menu ul {
+    display: flex;/*讓選單也橫排*/
+    gap: 16px;/*關於間格距離的部分*/
+    list-style:none;/*隱藏列表圓點*/
+}
+.menu a {
+    font-size: 18px;
+    padding: 6px 16px;/*把可以點選的範圍撐大*/
+    color: #FFF;
+    font-weight: 100;
+    
+}
+.menu a:hover {/*滑鼠移上去之後的狀態*/
+    color:#B8AA8D;
+}
+
+
+/*80px頂部*/
+.px{
+    height: 80px;
+    background-color: #ffffff;
+}
+
+
+.KV1{
+    width: 100%;
+    background-image: url(image/KV1.jpg);
+    background-size: cover;
+    padding-top: 53%;
+    animation: fadein 3s;
+}
+
+.KV1 img{
+    position: absolute;
+    top: 2%;
+    right: 45%;
+    bottom: 0; /* 將圖片固定在父層的大小 */
+    width: 8%;
+    padding-top: 10%;
+    object-fit: cover; /* 和background-image設定background-size: cover一樣，圖片剛好填滿 */
+    object-position: center;
+    animation: INANIMATION 5s ;
+    transition: width 2s ease, height 2s ease;
+
+}
+@media only screen and (max-width : 960px) {
+    .KV1 img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+@keyframes  INANIMATION {
+    0% {
+        opacity:0;
+    }
+    40% {
+        opacity:0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity:1;
+        transform: scale(1);
+    }
+}
+
+.bxslider{
+    margin-inline: auto;
+    animation: fadein 3s;
+}
+a.anchor {/*自訂定位點*/
+    position: relative;
+    top: -40px;/*把定位點往上調*/
+    visibility: hidden;/*可見度為零*/
+
+}
+
+
+
+section {
+    margin: 20px 0;/*間格距離*/
+    padding: 10px 20px;/*調整內邊距*/
+    text-align: center;
+}
+
+section h2{
+    margin: 100px 0 50px 0;
+    color: #eeeeee;
+    font-size: 60px;
+    font-weight: 100;
+    letter-spacing: 1em;
+    text-align: center;
+}
+
+section h3{
+    font-family:  "Noto Sans TC";
+    font-weight: 100;
+    letter-spacing: 1em;
+    margin: 15px 0;
+    font-size: 25px;
+}
+section p{
+    font-family:  "Noto Sans TC";
+    font-weight: 300;
+    letter-spacing: 0.5em;
+    line-height: 2.5em;
+    padding: 40px 100px;
+}
+.S3{
+    display: flex;
+    gap: 20px;
+    align-items: center;}
+    .S3L{
+        display: flex;
+        align-items: center;
+        height: 400px;
+        width: 50%;
+        margin: 40px 100px;
+
+    }
+    .S3R{
+        height: 400px;
+        width: 50%;
+        margin: 40px 10px;
+    }
+    .S3R p{
+        padding: 0;
+        
+    }

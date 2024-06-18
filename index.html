@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIBUYA SKY</title>
+    <link rel="stylesheet" href="jquery.bxslider.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <class="wrap">
+        <header>
+            
+            <a class="logo" href="#"><img src="image/LOGO.png" alt="LOGO"></a>
+            
+            <nav class="menu">
+            <ul>
+                <li><a href="#S1">渋谷</a></li>
+                <li><a href="#S2">写真</a></li>
+                <li><a href="#S3">渋谷駅</a></li>
+            </ul>
+            </nav>
+        </header>
+        <div class="px"></div>
+        <div class="KV1">
+            <img src="image/KV2.png">
+        </div>
+
+
+
+        <a class="anchor" id="S1"></a>
+        <section class="anchor"id="S1">
+            <h2>渋 谷</h2>
+
+            <h3>鼓動、流行と文化の最前線</h3>
+            <p>渋谷は東京の中心に位置し、観光、文化、流行の発信地です。 <br>渋谷交差点、渋谷109などのショッピングスポット、そして多様なエンターテイメントが楽しめる渋谷は、常に進化し続ける都市です。</p>
+
+        </section>
+        <a class="anchor" id="S2"></a>
+        <section class="anchor" id="S2">
+            <h2>写 真</h2>
+            <div class="bxslider">
+                <div><img src="image/1JPG.jpg"></div>
+                <div><img src="image/2JPG.jpg"></div>
+                <div><img src="image/3JPG.jpg"></div>
+                <div><img src="image/4JPG.jpg"></div>
+            </div>
+        </section>
+        <a class="anchor" id="S3"></a>
+        <section class="anchor" id="S3">
+            <h2>渋谷駅</h2>
+            <div class="S3">
+
+            <div class="S3L">
+                <p>
+                    渋谷は江戸時代から商業の中心地として発展し、1927年に渋谷駅が開業。現在は流行と文化の発信地として、世界中から注目を集めるエリアです。</p>
+            </div>
+            <div class="S3R"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8327.153788571359!2d139.6992814025322!3d35.66187442241204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563b00109f%3A0x337328def1e2ab26!2z5r6A6LC36LuK56uZ!5e0!3m2!1szh-TW!2stw!4v1718671099622!5m2!1szh-TW!2stw" width="100%" height="100%" style="border:2px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </section>
+
+            </div>
+            
+       
+        <footer>
+            <p style="line-height: 30px;text-align: center;font-weight: 100;letter-spacing:0.5em;padding: 10px 0;">Copyright © YUUSHAOTONA 2024</p>
+        </footer>
+    </div>
+
+
+</body>
+<!--置入 JQuery 套件（可用用線上的，也可以自己下載下來）-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!--置入套件專用 JavaScript-->
+<script src="jquery.bxslider.js"></script>
+<!--設定相關環境參數-->
+<script type="text/javascript">
+$('.bxslider').bxSlider({
+  auto: true, //自動播放
+  stopAutoOnClick: true, //滑鼠點選時停止播放
+  pager: true, //顯示下方圓點
+  Width: 100, //圖片寬度(像素)
+});
+</script>
+</html>
